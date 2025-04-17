@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Say it With Sweets</title>
+    <link rel="stylesheet" href="../statics/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav id="myTopnav" class="topnav">
+          <div class="logo-container">
+              <img src="../statics/logo.png" alt="Say it With Sweets Logo" class="logo">
+              <span class="store-name">Say it With Sweets</span>
+          </div>
+          <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="products.html">SHOP</a></li>
+              <li><a href="about.html" class="active">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section class="about-me">
+      <div class="container">
+        <div class="about-me-content">
+          <div class="profile-image">
+            <img src="../statics/profile-image.JPG" alt="Profile Photo">
+          </div>
+          <div class="about-me-text">
+            <h1>My Story</h1>
+            <p>
+              Welcome to Say it with Sweets! I'm Sharon Ebersole, and this little bakery of mine, tucked away on Pleasant Valley Boulevard in Altoona, 
+              Pennsylvania, is my pride and joy. Back in 2012, I decided to turn my passion for baking into something more, and thus Say it with Sweets 
+              was born. It's been an incredible journey of over 12 years, filled with flour, sugar, and lots of love.</p>
+            <p>Here, we specialize in making your celebrations a bit sweeter with our cakes, cookies, and uniquely designed cupcake creations. 
+              While we do not have a traditional storefront (everything's made to order for pickup), each treat is crafted with the utmost care 
+              and attention to detail, just for you. My bakery is more than just a business; it's a way to connect, celebrate, and share joy through 
+              the universal language of sweets. I am thrilled to bring a piece of my heart to your table and even more excited to share our journey 
+              with you online. Thanks for stopping by, and I can't wait to create something special for you</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>OPENING HOURS</h4>
+                    <p>Monday - Friday: 10am - 3pm</p>
+                    <p>Weekends: By appointment</p>
+                </div>
+                <div class="footer-section">
+                    <h4>ADDRESS:</h4>
+                    <p>1307 Pleasant Valley Blvd.</p>
+                    <p>Altoona, PA 16602, US</p>
+                    <p>Tel: +1.814-937-1564</p>
+                </div>
+                <div class="footer-section">
+                  <h4>GET IT FRESH</h4>
+                  <p>Sign up for our mailing list to receive updates and special offers!</p>
+                  <button id="mailingListBtn">Join Our Mailing List</button>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 Say it With Sweets</p>
+              <div class="social-media">
+                <a href="https://www.facebook.com/say.it.with.sweets/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/sayitwithsweets11/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g30034-d5017286-Reviews-Say_IT_With_Sweets-Altoona_Pennsylvania.html" target="_blank"><i class="fab fa-tripadvisor"></i></a>
+                <a href="https://www.yelp.com/biz/say-it-with-sweets-altoona" target="_blank"><i class="fab fa-yelp"></i></a>
+              </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Mailing List Modal -->
+    <div id="mailingListModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Join Our Mailing List</h2>
+          <form class="mailing-list-form" action="mailto:info@sayitwithsweets.com" method="post" enctype="text/plain">
+              <table>
+                  <tr>
+                      <td><label for="name">Name: <span class="required">*</span></label></td>
+                      <td><input type="text" id="name" name="name" required minlength="2" maxlength="100"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="email">Email Address: <span class="required">*</span></label></td>
+                      <td><input type="email" id="email" name="email" required minlength="5" maxlength="100"></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2">
+                          <input type="checkbox" id="sms" name="sms">
+                          <label for="sms">Receive messages via SMS text (optional)</label>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><label for="phone">Mobile Phone (digits only):</label></td>
+                      <td><input type="tel" id="phone" name="phone" pattern="[0-9]*" minlength="10" maxlength="20"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="zipcode">Zip Code (5-digit code):</label></td>
+                      <td><input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" minlength="5" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2"><button type="submit" class="button">Subscribe</button></td>
+                  </tr>
+              </table>
+          </form>
+      </div>
+    </div>
+  </div>
+  <script src="../statics/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

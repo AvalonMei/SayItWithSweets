@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Say it With Sweets - Home</title>
+    <link rel="stylesheet" href="statics/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav id="myTopnav" class="topnav">
+          <div class="logo-container">
+              <img src="statics/logo.png" alt="Say it With Sweets Logo" class="logo">
+              <span class="store-name">Say it With Sweets</span>
+          </div>
+          <ul>
+              <li><a href="index.html" class="active">HOME</a></li>
+              <li><a href="views/products.html">SHOP</a></li>
+              <li><a href="views/about.html">ABOUT</a></li>
+              <li><a href="views/contact.html">CONTACT</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <main>
+      <section class="hero">
+          <video autoplay loop muted>
+              <source src="statics/Promotion.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <div class="hero-content">
+              <h1>100% NATURAL HOMEMADE FRESH SWEETS</h1>
+              <a href="views/products.html" class="button">SHOP NOW</a>
+          </div>
+      </section>
+
+      <!-- Add the "Order Only" section here -->
+      <section class="order-only">
+          <div class="container">
+              <div class="order-only-content">
+                  <h2>PLEASE NOTE</h2>
+                  <p>All items are order and pickup only. We do not have a walk-in shop.</p>
+                  <p>To place an order, please call 814-937-1564 and prepay with a credit card.</p>
+              </div>
+          </div>
+      </section>
+
+      <section class="promotions">
+        <div class="container">
+          <h2>Special Promotions</h2>
+          <div class="promotion-grid">
+            <div class="promotion-card">
+              <img src="statics/promotion1.jpg" alt="Promotion 1">
+              <div class="promotion-content">
+                <h3>Spring Sweets Sale</h3>
+                <p>Enjoy 20% off on all cupcakes and cookie trays during the month of March!</p>
+                <a href="views/products.html" class="button">Order Now</a>
+              </div>
+            </div>
+            <div class="promotion-card">
+              <img src="statics/carousel2.jpg" alt="Promotion 2">
+              <div class="promotion-content">
+                <h3>Free Delivery</h3>
+                <p>Get free delivery on orders over $50 within Altoona, PA!</p>
+                <a href="views/products.html" class="button">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="best-sellers">
+        <h2>BEST SELLERS</h2>
+        <div class="product-grid">
+          <div class="product-card" data-category="cupcakes" data-modal="cupcakesModal">
+            <img src="statics/cupcakes.jpg" alt="Image of cupcakes">
+            <h3>Cupcakes</h3>
+            <p>$2.00</p>
+            <a href="#" class="view-details" data-modal="cupcakesModal">View Details</a>
+          </div>
+          <div class="product-card" data-category="cupcakeBouquets" data-modal="cupcakeBouquetsModal">
+            <img src="statics/cupcakebouquet.jpg" alt="Image of cupcake bouquet">
+            <h3>Cupcake Bouquets</h3>
+            <p>$32.00</p>
+            <a href="#" class="view-details" data-modal="cupcakeBouquetsModal">View Details</a>
+          </div>
+          <div class="product-card" data-category="cookieTrays" data-modal="cookieTraysModal">
+            <img src="statics/cookietray.jpg" alt="Image of Cookie Tray">
+            <h3>Cookie Tray</h3>
+            <p>Varying Price Depending on Size</p>
+            <a href="#" class="view-details" data-modal="cookieTraysModal">View Details</a>
+          </div>
+        </div>
+        <a href="views/products.html" class="view-all">View All Products</a>
+      </section>
+        
+        <!-- Cupcakes Modal -->
+        <div id="cupcakesModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Cupcakes</h2>
+                <div class="modal-details">
+                    <div class="modal-image">
+                        <img src="statics/cupcakes.jpg" alt="Cupcakes">
+                    </div>
+                    <div class="modal-info">
+                      <h3>Delightful cupcakes for every occasion</h3>
+                      <p> Please order at least 1 or 2 working days in advance.</p>
+                      <p>Available in a variety of flavors and decorations. Includes sprinkles if desired. </p>
+                      <ul>
+                          <li>Regular Cupcakes: $2.00 each</li>
+                      </ul>
+                      <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Cookie Trays Modal -->
+        <div id="cookieTraysModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Cookie Trays</h2>
+              <div class="modal-details">
+                  <div class="modal-image">
+                      <img src="statics/cookietray.jpg" alt="Cookie Trays">
+                  </div>
+                  <div class="modal-info">
+                      <h3>Assorted cookie trays to satisfy your sweet tooth</h3>
+                      <p>Please order at least 5 working days in advance </p>
+                      <p>Choose from a variety of delicious homemade cookies.</p>
+                      <ul>
+                          <li>Small Tray (5 dozen): $54</li>
+                          <li>Medium Tray (10 dozen): $97</li>
+                          <li>Large Tray (12 dozen): $112</li>
+                          <li>By the Dozen: $8</li>
+                      </ul>
+                      <p>Available Flavors:</p>
+                      <ul class="flavor-list">
+                          <li>Almond Chocolate Chunk</li>
+                          <li>Chocolate Chip</li>
+                          <li>Cookies &amp; Cream</li>
+                          <li>Coconut</li>
+                          <li>Drop Sugar Cookie - Sugar Sprinkles</li>
+                          <li>Drop Sugar Cookie - Chocolate Drizzle</li>
+                          <li>Italian Easter</li>
+                          <li>Orange Cream</li>
+                          <li>Peanut Butter</li>
+                          <li>Pumpkin Chocolate Chip (Seasonal)</li>
+                          <li>Raspberry Thumbprints</li>
+                          <li>Snickerdoodles</li>
+                          <li>Snowballs</li>
+                      </ul>
+                      <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Cupcake Bouquets Modal -->
+        <div id="cupcakeBouquetsModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Cupcake Bouquets</h2>
+              <div class="modal-details">
+                  <div class="modal-image">
+                      <img src="statics/cupcakebouquet.jpg" alt="Cupcake Bouquets">
+                  </div>
+                  <div class="modal-info">
+                      <h3>Each box is filled with 9 beautifully decorated flower cupcakes.</h3>
+                      <p>Please order at least 4 days in advance.</p>
+                      <ul>
+                          <li>Vanilla and Chocolate: $32.00</li>
+                      </ul>
+                      <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- I don't have access to using their Instagram page for Instagram API, so I tried to recreate the Instagram API effect manually -->
+        <section class="social-gallery">
+          <div class="container">
+            <h2>Connect with Us</h2>
+            <div class="gallery">
+              <div class="gallery-item">
+                <a href="https://www.instagram.com/sayitwithsweets11/" target="_blank">
+                  <img src="statics/Instagram1.PNG" alt="Instagram">
+                  <div class="overlay">
+                    <div class="icon">
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="text">Follow us on Instagram</div>
+                  </div>
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="https://www.facebook.com/say.it.with.sweets/" target="_blank">
+                  <img src="statics/Facebook.jpg" alt="Facebook">
+                  <div class="overlay">
+                    <div class="icon">
+                      <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="text">Like us on Facebook</div>
+                  </div>
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g30034-d5017286-Reviews-Say_IT_With_Sweets-Altoona_Pennsylvania.html" target="_blank">
+                  <img src="statics/Tripadvisor.JPG" alt="TripAdvisor">
+                  <div class="overlay">
+                    <div class="icon">
+                      <i class="fab fa-tripadvisor"></i>
+                    </div>
+                    <div class="text">Read reviews on TripAdvisor</div>
+                  </div>
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="https://www.yelp.com/biz/say-it-with-sweets-altoona" target="_blank">
+                  <img src="statics/yelp.JPG" alt="Yelp">
+                  <div class="overlay">
+                    <div class="icon">
+                      <i class="fab fa-yelp"></i>
+                    </div>
+                    <div class="text">Check us out on Yelp</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <h4>SHOP</h4>
+                  <ul>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="products.html">Products</a></li>
+                      <li><a href="contact.html">Contact Me</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4>OPENING HOURS</h4>
+                  <p>Monday - Friday: 10am - 3pm</p>
+                  <p>Weekends: By appointment</p>
+              </div>
+              <div class="footer-section">
+                  <h4>ADDRESS:</h4>
+                  <p>1307 Pleasant Valley Blvd.</p>
+                  <p>Altoona, PA 16602, US</p>
+                  <p>Tel: +1.814-937-1564</p>
+              </div>
+              <div class="footer-section">
+                <h4>GET IT FRESH</h4>
+                <p>Sign up for our mailing list to receive updates and special offers!</p>
+                <button id="mailingListBtn">Join Our Mailing List</button>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Say it With Sweets</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com/say.it.with.sweets/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/sayitwithsweets11/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.tripadvisor.com/Restaurant_Review-g30034-d5017286-Reviews-Say_IT_With_Sweets-Altoona_Pennsylvania.html" target="_blank"><i class="fab fa-tripadvisor"></i></a>
+              <a href="https://www.yelp.com/biz/say-it-with-sweets-altoona" target="_blank"><i class="fab fa-yelp"></i></a>
+            </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Mailing List Modal -->
+  <div id="mailingListModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Join Our Mailing List</h2>
+        <form class="mailing-list-form" action="mailto:info@sayitwithsweets.com" method="post" enctype="text/plain">
+            <table>
+                <tr>
+                    <td><label for="name">Name: <span class="required">*</span></label></td>
+                    <td><input type="text" id="name" name="name" required minlength="2" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address: <span class="required">*</span></label></td>
+                    <td><input type="email" id="email" name="email" required minlength="5" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="sms" name="sms">
+                        <label for="sms">Receive messages via SMS text (optional)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Mobile Phone (digits only):</label></td>
+                    <td><input type="tel" id="phone" name="phone" pattern="[0-9]*" minlength="10" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td><label for="zipcode">Zip Code (5-digit code):</label></td>
+                    <td><input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" minlength="5" maxlength="5"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="button">Subscribe</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+  </div>
+
+  </div>
+  <script src="statics/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

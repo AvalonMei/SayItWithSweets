@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Products - Say it With Sweets</title>
+    <link rel="stylesheet" href="../statics/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav id="myTopnav" class="topnav">
+          <div class="logo-container">
+              <img src="../statics/logo.png" alt="Say it With Sweets Logo" class="logo">
+              <span class="store-name">Say it With Sweets</span>
+          </div>
+          <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="products.html" class="active">SHOP</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="slide">
+            <img src="../statics/carousel4.jpg" alt="Carousel Image 1">
+          </div>
+          <div class="slide">
+            <img src="../statics/carousel1.jpg" alt="Carousel Image 2">
+          </div>
+          <div class="slide">
+            <img src="../statics/carousel3.jpg" alt="Carousel Image 3">
+          </div>
+          <div class="slide">
+            <img src="../statics/carousel2.jpg" alt="Carousel Image 3">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-content">
+        <h1>Our Products</h1>
+      </div>
+    </section>
+
+    <section class="product-categories">
+        <div class="category-grid">
+            <div class="category-card" data-category="cupcakes" data-modal="cupcakesModal">
+                <img src="../statics/cupcakes.jpg" alt="Cupcakes">
+                <h3>Cupcakes</h3>
+                <p>Delightful cupcakes for every occasion.</p>
+            </div>
+
+            <div class="category-card" data-category="cookieTrays" data-modal="cookieTraysModal">
+                <img src="../statics/cookietray.jpg" alt="Cookie Trays">
+                <h3>Cookie Trays</h3>
+                <p>Assorted cookie trays to satisfy your sweet tooth.</p>
+            </div>
+            <div class="category-card" data-category="cakes" data-modal="cakesModal">
+                <img src="../statics/cookiecake.PNG" alt="Cookie Cakes">
+                <h3>Cookie Cakes</h3>
+                <p>Fresh cookie cakes equivalent to 5 dozen cookies.</p>
+            </div>
+            <!-- Cupcake Bouquets Category Card -->
+            <div class="category-card" data-category="cupcakeBouquets" data-modal="cupcakeBouquetsModal">
+              <img src="../statics/cupcakebouquet.jpg" alt="Cupcake Bouquets">
+              <h3>Cupcake Bouquets</h3>
+              <p>Cupcake bouquets are a truly unique gift for any occasion.</p>
+            </div>
+
+            <!-- Custom Made Cookies Category Card -->
+            <div class="category-card" data-category="customCookies" data-modal="customCookiesModal">
+              <img src="../statics/customcookies.jpg" alt="Custom Made Cookies">
+              <h3>Custom Made Cookies</h3>
+              <p>Custom made cookies tailored to fit your special occasion.</p>
+            </div>
+
+            <!-- Custom Made Cakes Category Card -->
+            <div class="category-card" data-category="customCakes" data-modal="customCakesModal">
+              <img src="../statics/customcakes.jpg" alt="Custom Made Cakes">
+              <h3>Custom Made Cakes</h3>
+              <p>Exquisite cakes custom made for your events.</p>
+            </div>
+            <!-- Blue and White Category Card -->
+            <div class="category-card" data-category="blueWhite" data-modal="blueWhiteModal">
+              <img src="../statics/bluewhite.jpg" alt="Blue & White Treats">
+              <h3>Blue & White</h3>
+              <p>Surprise your special student with one of our blue & white sweet treats.</p>
+          </div>
+          
+        </div>
+    </section>
+
+    <!-- Cupcakes Modal -->
+    <div id="cupcakesModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Cupcakes</h2>
+          <div class="modal-details">
+              <div class="modal-image">
+                  <img src="../statics/cupcakes.jpg" alt="Cupcakes">
+              </div>
+              <div class="modal-info">
+                  <h3>Delightful cupcakes for every occasion</h3>
+                  <p> Please order at least 1 or 2 working days in advance.</p>
+                  <p>Available in a variety of flavors and decorations. Includes sprinkles if desired. </p>
+                  <ul>
+                      <li>Regular Cupcakes: $2.00 each</li>
+                  </ul>
+                  <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Cookie Trays Modal -->
+    <div id="cookieTraysModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Cookie Trays</h2>
+          <div class="modal-details">
+              <div class="modal-image">
+                  <img src="../statics/cookietray.jpg" alt="Cookie Trays">
+              </div>
+              <div class="modal-info">
+                  <h3>Assorted cookie trays to satisfy your sweet tooth</h3>
+                  <p>Please order at least 5 working days in advance </p>
+                  <p>Choose from a variety of delicious homemade cookies.</p>
+                  <ul>
+                      <li>Small Tray (5 dozen): $54</li>
+                      <li>Medium Tray (10 dozen): $97</li>
+                      <li>Large Tray (12 dozen): $112</li>
+                      <li>By the Dozen: $8</li>
+                  </ul>
+                  <p>Available Flavors:</p>
+                  <ul class="flavor-list">
+                      <li>Almond Chocolate Chunk</li>
+                      <li>Chocolate Chip</li>
+                      <li>Cookies &amp; Cream</li>
+                      <li>Coconut</li>
+                      <li>Drop Sugar Cookie - Sugar Sprinkles</li>
+                      <li>Drop Sugar Cookie - Chocolate Drizzle</li>
+                      <li>Italian Easter</li>
+                      <li>Orange Cream</li>
+                      <li>Peanut Butter</li>
+                      <li>Pumpkin Chocolate Chip (Seasonal)</li>
+                      <li>Raspberry Thumbprints</li>
+                      <li>Snickerdoodles</li>
+                      <li>Snowballs</li>
+                  </ul>
+                  <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Cakes Modal -->
+    <div id="cakesModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Cookie Cakes</h2>
+          <div class="modal-details">
+              <div class="modal-image">
+                  <img src="../statics/cookiecake.PNG" alt="Cakes">
+              </div>
+              <div class="modal-info">
+                  <h3>Fresh cookie cakes equivalent to 5 dozen cookies.</h3>
+                  <p>Please order 5 days before pick up or delivery.</p>
+                  <p>Our 12 inch x 1 inch Chocolate Chip Cookie Cakes are made fresh and are equivalent to 5 dozen cookies. Other themes available.</p>
+                  <ul>
+                      <li>Message only with border &amp; sprinkles: $35.00</li>
+                      <li>Decorated: $40.00 &amp; up.</li>
+                  </ul>
+                  <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Cupcake Bouquets Modal -->
+    <div id="cupcakeBouquetsModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Cupcake Bouquets</h2>
+          <div class="modal-details">
+              <div class="modal-image">
+                  <img src="../statics/cupcakebouquet.jpg" alt="Cupcake Bouquets">
+              </div>
+              <div class="modal-info">
+                  <h3>Each box is filled with 9 beautifully decorated flower cupcakes.</h3>
+                  <p>Please order at least 4 days in advance.</p>
+                  <ul>
+                      <li>Vanilla and Chocolate: $32.00</li>
+                  </ul>
+                  <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Custom Made Cookies Modal -->
+    <div id="customCookiesModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Custom Made Cookies</h2>
+          <div class="modal-details">
+              <div class="modal-image">
+                  <img src="../statics/customcookies.jpg" alt="Custom Made Cookies">
+              </div>
+              <div class="modal-info">
+                  <h3>Tailored cookies for your special occasions.</h3>
+                  <p>For orders up to 6 dozen, please provide at least 7 working days notice. For larger orders, 2 weeks notice is appreciated. Call for pricing.</p>
+                  <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Custom Made Cakes Modal -->
+    <div id="customCakesModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Custom Made Cakes</h2>
+          <div class="modal-details">
+              <div class="modal-image">
+                  <img src="../statics/customcakes.jpg" alt="Custom Made Cakes">
+              </div>
+              <div class="modal-info">
+                  <h3>Our custom made cakes are tailored for your events.</h3>
+                  <p>Order early as we schedule a limited number each week. Basic flavors include vanilla, chocolate, almond, and more. Other flavors available upon request.</p>
+                  <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Blue and White Treats Modal -->
+    <div id="blueWhiteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Blue & White</h2>
+            <div class="modal-details">
+                <div class="modal-image">
+                    <img src="../statics/bluewhite.jpg" alt="Blue & White Treats">
+                </div>
+                <div class="modal-info">
+                    <h3>Penn State Moms - Surprise your special student!</h3>
+                    <p>Please order at least 48 hours in advance.</p>
+                    <ul>
+                        <li>Paw Print Cupcakes: $27 per dozen</li>
+                        <li>Blue and White Cupcakes: $26 per dozen</li>
+                        <li>Cookie Cake: $46</li>
+                    </ul>
+                    <a href="tel:814-937-1564" class="call-to-action">Call 814-937-1564 now to order!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>OPENING HOURS</h4>
+                    <p>Monday - Friday: 10am - 3pm</p>
+                    <p>Weekends: By appointment</p>
+                </div>
+                <div class="footer-section">
+                    <h4>ADDRESS:</h4>
+                    <p>1307 Pleasant Valley Blvd.</p>
+                    <p>Altoona, PA 16602, US</p>
+                    <p>Tel: +1.814-937-1564</p>
+                </div>
+                <div class="footer-section">
+                  <h4>GET IT FRESH</h4>
+                  <p>Sign up for our mailing list to receive updates and special offers!</p>
+                  <button id="mailingListBtn">Join Our Mailing List</button>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 Say it With Sweets</p>
+              <div class="social-media">
+                <a href="https://www.facebook.com/say.it.with.sweets/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/sayitwithsweets11/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g30034-d5017286-Reviews-Say_IT_With_Sweets-Altoona_Pennsylvania.html" target="_blank"><i class="fab fa-tripadvisor"></i></a>
+                <a href="https://www.yelp.com/biz/say-it-with-sweets-altoona" target="_blank"><i class="fab fa-yelp"></i></a>
+              </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Mailing List Modal -->
+    <div id="mailingListModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Join Our Mailing List</h2>
+          <form class="mailing-list-form" action="mailto:info@sayitwithsweets.com" method="post" enctype="text/plain">
+              <table>
+                  <tr>
+                      <td><label for="name">Name: <span class="required">*</span></label></td>
+                      <td><input type="text" id="name" name="name" required minlength="2" maxlength="100"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="email">Email Address: <span class="required">*</span></label></td>
+                      <td><input type="email" id="email" name="email" required minlength="5" maxlength="100"></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2">
+                          <input type="checkbox" id="sms" name="sms">
+                          <label for="sms">Receive messages via SMS text (optional)</label>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><label for="phone">Mobile Phone (digits only):</label></td>
+                      <td><input type="tel" id="phone" name="phone" pattern="[0-9]*" minlength="10" maxlength="20"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="zipcode">Zip Code (5-digit code):</label></td>
+                      <td><input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" minlength="5" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2"><button type="submit" class="button">Subscribe</button></td>
+                  </tr>
+              </table>
+          </form>
+      </div>
+    </div>
+  </div>
+  <script src="../statics/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
